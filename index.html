@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Tsunami Epicenters</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Global Tsunami Epicenters</h1>
+        <p>Click on markers to view impact details</p>
+    </div>
+    <div id="map"></div>
+    <div class="legend">
+        <h4>Tsunami Magnitude</h4>
+        <div><span style="background-color: #ffeda0"></span>Minor (&lt; 6.0)</div>
+        <div><span style="background-color: #feb24c"></span>Moderate (6.0-7.9)</div>
+        <div><span style="background-color: #f03b20"></span>Major (8.0+)</div>
+    </div>
+    <div class="footer">
+        <p>Data source: NOAA National Centers for Environmental Information</p>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
